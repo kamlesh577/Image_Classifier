@@ -22,9 +22,15 @@ CNNs are deep learning models suited for analyzing visual imagery. They are heav
  ### Convolution
 The ultimate purpose of this layer is to receive a feature map. Usually, we start with low number of filters for low-level feature detection. The deeper we go into the CNN, the more filters (usually they are also smaller) we use to detect high-level features.
 
-![1_yZQjaMKHjm1HzDF4t4juzg](https://user-images.githubusercontent.com/38343027/66099622-2430b280-e5c5-11e9-9436-e252506e661d.png)
+![Webp net-resizeimage (2)](https://user-images.githubusercontent.com/38343027/66099964-a2da1f80-e5c6-11e9-88c9-d08afdb0bec7.png)
 
 Feature detection is based on ‘scanning’ the input with the filter of a given size and applying matrix computations in order to derive a feature map.
 
 ![1_-OM6jQTMNACDX2vAh_lvMQ](https://user-images.githubusercontent.com/38343027/66099717-8e495780-e5c5-11e9-8441-589b5e79e8e4.png)
 
+
+![Uploading 1_h1S9FFDHmmj5yY_Y3uMcgw.gif…]()
+
+
+## Activation
+Without going into further details, we will use ReLU activation function that returns 0 for every negative value in the input image while it returns the same value for every positive value.
