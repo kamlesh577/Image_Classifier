@@ -13,7 +13,7 @@ For example, a 6x6 RGB abstract image representation would look like this.
 
 Where each pixel has a specific value of red, green and blue that represents the color of a given pixel.
 
-![1_Q39MdvBKPMkihqLFQoq82A](https://user-images.githubusercontent.com/38343027/66099308-0c0c6380-e5c4-11e9-956a-4b41e44624b5.png)
+![Webp net-resizeimage (3)](https://user-images.githubusercontent.com/38343027/66100677-81c6fe00-e5c9-11e9-8fc4-c23cbd4b0242.png)
 
 
 ## Convolutional Neural Networks (CNNs)
@@ -29,8 +29,25 @@ Feature detection is based on ‘scanning’ the input with the filter of a give
 ![1_-OM6jQTMNACDX2vAh_lvMQ](https://user-images.githubusercontent.com/38343027/66099717-8e495780-e5c5-11e9-8441-589b5e79e8e4.png)
 
 
-![Uploading 1_h1S9FFDHmmj5yY_Y3uMcgw.gif…]()
+![1_h1S9FFDHmmj5yY_Y3uMcgw](https://user-images.githubusercontent.com/38343027/66100494-cf8f3680-e5c8-11e9-81b9-4aecb5961b7e.gif)
 
 
 ## Activation
 Without going into further details, we will use ReLU activation function that returns 0 for every negative value in the input image while it returns the same value for every positive value.
+
+![1_LaS6Smyz0rcxExHNOs7dfw](https://user-images.githubusercontent.com/38343027/66100623-4c221500-e5c9-11e9-95ae-05df5ec32ae7.jpeg)
+
+Shape remains unchanged, it’s still [32x32x12]
+
+## Pooling
+The goal of this layer is to provide spatial variance, which simply means that the system will be capable of recognizing an object as an object even when its appearance varies in some way.
+Pooling layer will perform a downsampling operation along the spatial dimensions (width, height), resulting in output such as [16x16x12] for pooling_size=(2, 2).
+
+![1_EjHD2jDX1-OZrnulk5WcTA](https://user-images.githubusercontent.com/38343027/66100753-ca7eb700-e5c9-11e9-9cd0-71f6473f8f33.gif)
+
+## Fully Connected Layer
+In a fully connected layer, we flatten the output of the last convolution layer and connect every node of the current layer with the other node of the next layer. Neurons in a fully connected layer have full connections to all activations in the previous layer, as seen in regular Neural Networks and work in a similar way.
+The last layer of our CNN will compute the class probability scores, resulting in a volume of size [1x1xNUMBER_OF_CLASSES].
+
+![1_qsbsCVyu376kqdnNcdxmmw](https://user-images.githubusercontent.com/38343027/66100814-0285fa00-e5ca-11e9-8254-bdf8598372f0.png)
+
