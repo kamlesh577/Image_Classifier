@@ -11,7 +11,7 @@ For example, a 6x6 RGB abstract image representation would look like this.
 
  ![1_9TbWVXICJaXxUsCzg1wrDQ](https://user-images.githubusercontent.com/38343027/66099238-bc2d9c80-e5c3-11e9-875a-db1866f5333f.png)
 
-Where each pixel has a specific value of red, green and blue that represents the color of a given pixel.
+Where each pixel has a specific value of red, green and blue that represents the color of a given pixel
 
 ![Webp net-resizeimage (3)](https://user-images.githubusercontent.com/38343027/66100677-81c6fe00-e5c9-11e9-8fc4-c23cbd4b0242.png)
 
