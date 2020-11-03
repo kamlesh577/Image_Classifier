@@ -1,5 +1,5 @@
 # Image Classifier
-## This repository contains keras image classifier that can classify whether the given image is of a dog or cat
+## This repository contains keras image classifier that can classify whether the given image is of a dog or cat.
  
 In our examples we will use two sets of pictures, which we got from Kaggle: 1000 cats and 1000 dogs images (although the original dataset had 12,500 cats and 12,500 dogs, we just took the first 1000 images for each class). We also use 400 additional samples from each class as validation data, to evaluate our models.
 
